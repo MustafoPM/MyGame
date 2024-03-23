@@ -1,0 +1,34 @@
+.buttonClass {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.buttonClass:hover {
+    box-shadow: 0 0 15px black;
+    transform: scale(1.04);
+}
+
+.buttonClass:active {
+    box-shadow: 0 0 15px black;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.gif {
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 3px
+}
+
+.yes {
+    font-size: 42px;
+    position: absolute;
+    margin-top: 106%;
+    color: #14ff008a;
+}
+
+.no {
+    font-size: 42px;
+    position: absolute;
+    margin-top: 106%;
+    color: #ff0000a3;
+}

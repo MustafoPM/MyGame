@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingers_Of_Fate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Whisper&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Glagolitic&family=Whisper&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Glagolitic&family=Shadows+Into+Light&family=Whisper&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+        body {
+            background-image: url('img/вертикалькый.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .mainpage {
+            text-align: center;
+        }
+        
+        .GameName {
+            font-size: 288%;
+            font-family: Bebas Neue;
+        }
+        
+        .NasName {
+            font-size: 140%;
+            font-family: Shadows Into Light;
+        }
+        
+        .components {
+            display: flex;
+            align-content: space-between;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        
+        .inputClass {
+            border: 5px solid black;
+            border-radius: 14%;
+            width: 73%;
+            height: 159px;
+            padding: 7%;
+            overflow: auto;
+            opacity: 60%;
+            font-size: 22px;
+            font-family: Comforter Brush;
+            background-color: lightslategray;
+            color: whitesmoke;
+        }
+        
+        .buttonClass {
+            width: 300px;
+            border: 3px solid black;
+            opacity: 60%;
+            margin-top: 15px;
+            background-color: lightslategray;
+            color: #ff0000;
+            font-size: 17px;
+            padding: 18px;
+            font-family: Rubik Maze;
+        }
+        
+        .whisper-regular {
+            font-family: "Whisper", cursive;
+            font-weight: 18px;
+            font-style: normal;
+        }
+        
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .noto-sans glagolitic-regular {
+            font-family: "Noto Sans Glagolitic", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .shadows-into light-regular {
+            font-family: "Shadows Into Light", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .comforter-brush-regular {
+            font-family: "Comforter Brush", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .Fingers {
+            color: black;
+        }
+        
+        .Fate {
+            color: red;
+        }
+        
+        .of {
+            color: black;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Comforter+Brush&family=Rubik+Maze&display=swap');
+        .rubik-maze-regular {
+            font-family: "Rubik Maze", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /* .labelClass { border: 5px solid; height: 500px; } .labelContainer { text-align: center; } */
+        
+        .footerCont {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            color: brown;
+            background-color: aliceblue;
+            opacity: 80%;
+            margin-top: -1%;
+        }
+        
+        .infotext {
+            color: #006f64;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="headline">
+            <div class="mainpage">
+                <h1 class="GameName">
+                    <p class="text">
+                        <span class="Fingers">Fingers</span> <span class="of">of</span>
+                        <span class="Fate">Fate</span>
+                    </p>
+                </h1>
+                <h3 class="NasName">Your chance is in your hands</h3>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="components">
+                <input type="text" class="inputClass" id="inputID" placeholder="текст">
+                <button onclick="showAnswer()" class="buttonClass" id="buttonID">ПРОВЕРИТЬ</button>
+                <p class="answer" id="answer"></p>
+            </div>
+
+            <!-- 
+              <div class="labelContainer ">
+                <label class="labelClass " id="labelID "></label>
+
+                &quot;Смогу ли я сдать экзамен? А наш волшебный шар даст ответ либо &#39;да&#39; либо &#39;нет&quot; 
+
+             </div>
+            -->
+
+        </div>
+
+        <div class="pir ">
+            <img src="img/piramid.gif " alt="gif " class="gif ">
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerCont ">
+            <a href="info/GameInfo.html " class="a " id="a "><span class="infotext ">Как играть?</span></a>
+            <a href="https://t.me/mmm444s " class="me " id="meID "><span class="infotext ">Telegram</span></a>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js "></script>
+</body>
+
+</html>

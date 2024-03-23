@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+    <link rel="stylesheet" href="css/helper.css">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .h1 {
+            text-align: center;
+            font-size: larger;
+            color: red;
+        }
+        
+        .text {
+            color: red;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+        
+        #tooltip {
+            font-size: 25px;
+            color: #00ffc0;
+        }
+        
+        .txt {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="txt">👇Нажмите на текст, чтобы увидеть подсказку:👇</p>
+    <span onclick="showTooltip('')" class="text">Как играть?</span>
+    <!-- Добавьте другие тексты по аналогии -->
+
+    <div id="tooltip" style="display: none;"></div>
+
+
+    <script>
+        function showTooltip(text) {
+            const tooltip = document.getElementById("tooltip");
+            tooltip.innerText = text + "1. Укажите условие, например: " +
+                "стану ли я успешным ?, " +
+                "будет ли у меня кошка ?, " +
+                "смогу ли я сдать экзамен ? и так далее.\n" +
+                "2. После того, как вы указали условие, нажмите на кнопку 'Проверить', и тогда магический шар даст ответ либо 'да', либо 'нет'.\n" +
+                "Правила:\n" +
+                "1. Вы можете указать только одно условие, на которое будет один ответ 'да' или 'нет';\n" +
+                "второй раз программа не примет его.\n" +
+                "2. Чтобы программа рассмотрела ваши другие запросы, стерте предыдущий текст и напишите новый.😋\n";
+            tooltip.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
